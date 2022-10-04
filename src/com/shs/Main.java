@@ -4,6 +4,15 @@ import java.util.*;
 
 public class Main {
 
+    //  Part 1:  Implement the 5 cases below to pop 2 items off
+    //  the stack, evaluate, and push the result back on.
+
+    //  Part 2:  Implement "=". Use the variables data structure
+    //  below to store the "variables" in use (name, value) on
+    //  the evaluation stack.
+
+    Hashtable<String, Double> variables;
+
     /**
      * Computes the outcome of a given expression in Reverse Polish Notation
      *
@@ -59,7 +68,7 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        //  Postfix for -35 + 4 * 2 - 1
+        //  Calculate postfix for -35 + 4 * 2 - 1
 
         String s = "-35 4 2 * + 1 -";
 
@@ -69,5 +78,5 @@ public class Main {
             System.out.println(err.getMessage());
         }
     }
-    
+
 }
