@@ -103,34 +103,11 @@ public class Main {
     /**
      * Runs the calculation for the RPN expression
      */
-
-    /*
-    public static String infixToPostfix(String infix)
-    {
-        HashMap<Character, Integer> precedence = new HashMap<Character, Integer>(3);
-        precedence.put('+', 1);
-        precedence.put('-', 1);
-        precedence.put('*', 2);
-        precedence.put('/', 2);
-        precedence.put('^', 3);
-        Stack expressions = new Stack();
-        StringBuilder postfix = new StringBuilder();
-        for (String token : infix.split("\\s+")) {
-            if(token.matches("/d+"))
-            {
-
-            }
-        }
-        return postfix.toString();
-    }
-    */
-
     public static void main(String[] args) {
 
         //  Calculate postfix for -35 + 4 * 2 - 1
 
-        String s1 = "a -35 b 4 2 * = + 1 - =";
-        String s = "a 1 2 = +";
+        String s = "a -35 b 4 2 * = + 1 - =";
 
         try {
             compute(s);
